@@ -10,7 +10,7 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>Environments and Technologies Used</h2>
 
 - Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Remote Desktop (Mac User) 
 - Internet Information Services (IIS)
 
 <h2>Operating Systems Used </h2>
@@ -28,14 +28,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 </p>
 <p>
-Ok, welcome to my first tutorial! First things first we will have to create a Virtual machine using the Microsoft Azure portal. We will be using a VM which is a remote computer. We are using a VM in order to protect our physical machine just in case something breaks. Create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs. In this example I will be using 4 CPUs.
+Hello, welcome to my first tutorial! First things first we will have to create a virtual machine (VM) using the Microsoft Azure portal. We will be using a VM which is a compute source in order to run our program, osTicket. In this insatance a VM is used in order to create and tear down a reomte computer wihtout affecting our physical machine. Create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs. In this example I will be using 4 CPUs.
   
  <img src="https://i.imgur.com/YAmZoY6.png"/>
 </p>
 <br />
 <p>
 </p>
-<p>Next simply connect to your newly created VM using RDP using the public IPv4 address. If you are a Mac user you will have to download Microsoft RDP. 
+<p>Next simply connect to your newly created VM using RDP using the public IPv4 address (copy and paste from Azure). If you are a Mac user you will have to download Microsoft RDP in order to establish a connection with your VM, this is what you should see. 
 </p>
 <img src="https://i.imgur.com/Vuhy56h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -44,7 +44,7 @@ Ok, welcome to my first tutorial! First things first we will have to create a Vi
 <p>
 </p>
 <p>
-Alright, now that you are connected to your VM you will have to enable IIS. Simply access the control panel then select uninstall a program. Off to the left select "Turn windows features on or off". A list will appear then you will enable Internet Information Services.
+After connecting to the VM, you will have to enable IIS. Simply access the control panel then select uninstall a program. Off to the left select "Turn Windows features on or off". A list will appear then you will enable Internet Information Services.
 </p>  
 <img src="https://i.imgur.com/DgJLOi1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -95,7 +95,7 @@ New Permissions->Everyone->all
 <p>
 </p>
 <p>
-Afterwards continue setting up osTicket in the browser (click continue) then you will name the Helpdesk to your liking. Select a default email that will receive emails from customers who submit tickets. 
+Afterwards, continue setting up osTicket in the browser (click continue) then you will name the Helpdesk to your liking. Select a default email that will receive emails from customers who submit tickets. 
 </p>
 <img src="https://i.imgur.com/iZ8qwdn.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
