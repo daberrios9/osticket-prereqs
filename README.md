@@ -28,14 +28,14 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <p>
 </p>
 <p>
-Hello, welcome to my first tutorial! First things first we will have to create a virtual machine (VM) using the Microsoft Azure portal. We will be using a VM which is a compute source in order to run our program, osTicket. In this insatance a VM is used in order to create and tear down a reomte computer wihtout affecting our physical machine. Create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs. In this example I will be using 4 CPUs.
+Hello, welcome to my first tutorial! First things first we will have to create a virtual machine (VM) using the Microsoft Azure portal. We will be using a VM which is a compute source in order to run our program, osTicket. In this instance, a VM is used in order to create and tear down a reomte computer wihtout affecting our physical machine. Then create a resource group and title it "osTicket". Afterwards create a VM with 2-4 CPUs. In this example I will be using 4 CPUs.
   
  <img src="https://i.imgur.com/YAmZoY6.png"/>
 </p>
 <br />
 <p>
 </p>
-<p>Next simply connect to your newly created VM using RDP using the public IPv4 address (copy and paste from Azure). If you are a Mac user you will have to download Microsoft RDP in order to establish a connection with your VM, this is what you should see. 
+<p>Next simply connect to your newly created VM using RDP (Remote Desktop Protocol) using the public IPv4 address (copy and paste from Azure). If you are a Mac user you will have to download Microsoft RDP in order to establish a connection with your VM, this is what you should see. 
 </p>
 <img src="https://i.imgur.com/Vuhy56h.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
@@ -44,20 +44,20 @@ Hello, welcome to my first tutorial! First things first we will have to create a
 <p>
 </p>
 <p>
-After connecting to the VM, you will have to enable IIS. Simply access the control panel then select uninstall a program. Off to the left select "Turn Windows features on or off". A list will appear then you will enable Internet Information Services.
+After connecting to the VM, you will have to enable the Internet Information Services (IIS, web server). Simply access the control panel then select uninstall a program. Off to the left select "Turn Windows features on or off". A list will appear then you will enable IIS.
 </p>  
 <img src="https://i.imgur.com/DgJLOi1.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <br />
 </p>
 <p>
-Excellent. Now that you have enabled IIS we need to install Web Platform Installer. I have provided a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
-  That link will provide you with all of the material you need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
+Now that you have enabled IIS we need to install Web Platform Installer. I have provided a link here: https://drive.google.com/drive/u/0/folders/1APMfNyfNzcxZC6EzdaNfdZsUwxWYChf6
+  This link will provide you with all of the material you need to download to get osTicket up and running. Simply click the link and install the Web Platform Installer
 </p>
 <img src="https://i.imgur.com/3cDqYET.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>  
 </p>
 <p>
-Once you have installed Web Installer Platform open it. From inside the application you are going to install MySQL 5.5 Afterwards install x86 version of PHP up until 7.3. There are some failed files such as C++ redistributable package as well as PHP 7.3.8 and PHP Manager for IIS those files can be found with the install link.
+Once you have installed Web Installer Platform open it. From inside the application you are going to install MySQL 5.5 and then install x86 version of PHP up until 7.3. There are some failed files such as C++ redistributable package as well as PHP 7.3.8 and PHP Manager for IIS those files can be found with the install link.
 </p>
 <img src="https://i.imgur.com/ouuZ0mf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <p>
